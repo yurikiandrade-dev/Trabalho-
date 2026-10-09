@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+mark{
+    background-color: dodgerblue;
+}
+.Li-negrito{
+    font-weight: 700;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
