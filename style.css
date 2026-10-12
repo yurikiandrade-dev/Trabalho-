@@ -1,12 +1,225 @@
 @charset 'UTF-8';
+@import url("https://fonts.googleapis.com/css2?family=Isometra&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-mark{
-    background-color: dodgerblue;
+@font-face {
+  font-family: "fonte-padrão";
+  src: url("fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+  font-weight: normal;
 }
-.Li-negrito{
-    font-weight: 700;
-}
-main{
-    font-family: Arial, Helvetica, sans-serif;
 
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+mark {
+  background-color: var(--color0);
+}
+.Li-negrito {
+  font-weight: 700;
+}
+
+:root {
+  --color0: #d7fff1;
+  --color1: #129490;
+  --color2: #007e94;
+  --color3: #151a28;
+  --color4: #080d29;
+  --paleta1: #007e94, #026475, #005261, #00414d;
+  --paleta2: #007e94, #026475, #129490, #10807c;
+}
+header {
+  background-image: linear-gradient(to top, var(--paleta2));
+  color: var(--color2);
+  min-height: 150px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+}
+header > h1 {
+  color: white;
+}
+.sub-header {
+background-image: url(imagens/meio.jpg);
+color: rgba(0, 0, 0, 0.822);
+
+background-size: cover;
+background-position: 100%;
+background-repeat: no-repeat;
+  height: 200px;
+  width: 1000px;
+ 
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.089);
+}
+
+
+body {
+  background-color: white;
+  font-family: "fonte-padrão", sans-serif;
+  margin: 0;
+}
+main {
+  background-color: white;
+  padding: 25px;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+main p {
+  margin: 15px, 0px;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+main h3 {
+  line-height: 2.2em;
+}
+main h2 {
+  line-height: 1.7em;
+  font-size: 1.6em;
+}
+main h1 {
+  font-size: 2em;
+}
+main img {
+  width: 100%;
+}
+footer {
+  background-color: var(--color1);
+}
+
+.Conteiner {
+  background-color: white;
+  
+}
+
+.bloco-alinhado {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+.item-texto{
+flex: 1;
+max-width: 400px;
+height: auto;
+width: auto;
+border-width: 0.1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.089);
+transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+
+}
+
+
+
+.item-texto:hover{
+ border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.322);
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+  transform: scale(1.01);
+}
+
+.item-texto h2{
+text-align: center;
+
+}
+
+
+.item {
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -10%;
+  margin-right: auto;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.171);
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+}
+.item:hover {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.322);
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+  transform: scale(1.01);
+}
+.img {
+  height: 320px;
+  width: 280px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.089);
+}
+.img-frente {
+  height: 320px;
+  width: 280px;
+  padding: 10px;
+  position: absolute;
+  left: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.089);
+}
+.img:hover {
+  border-color: rgba(255, 255, 0, 0.9);
+  box-shadow: 0 1px 30px rgba(255, 255, 0, 0.9);
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+}
+.img-frente:hover {
+  border-color: rgba(255, 255, 0, 0.9);
+  box-shadow: 0 1px 30px rgba(255, 255, 0, 0.9);
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+}
+
+.texto-l {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.texto-l h3 {
+  margin: -10px;
+  padding: 10px;
 }
